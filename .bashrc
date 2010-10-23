@@ -73,7 +73,7 @@ __git_uncommitted_changes() {
   fi
 }
 
-PS1='${debian_chroot:+($debian_chroot)}\u@\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}:\w\[$(__git_uncommitted_changes)\]$(__git_ps1 " (%s) ♥")\[\e[0m\] '
+PS1='${debian_chroot:+($debian_chroot)}\u\[$(__git_uncommitted_changes)\]♥\[\e[0m\]\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}:\w$(__git_ps1 " (%s)$ ")'
 
 
 # If this is an xterm set the title to user@host:dir
