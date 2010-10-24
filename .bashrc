@@ -31,7 +31,7 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
 xterm-color)
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1 " (%s)")\$ '
     ;;
 *)
     PS1='${debian_chroot:+($debian_chroot)}\u@\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}:\w$(__git_ps1 " (%s)")\$ '
@@ -73,7 +73,7 @@ __git_uncommitted_changes() {
   fi
 }
 
-PS1='${debian_chroot:+($debian_chroot)}\u\[$(__git_uncommitted_changes)\]♥\[\e[0m\]\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}:\w$(__git_ps1 " (%s)$ ")'
+PS1='${debian_chroot:+($debian_chroot)}\u\[$(__git_uncommitted_changes)\]♥\[\e[0m\]\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}:\w$(__git_ps1 " (%s)")\$ '
 
 
 # If this is an xterm set the title to user@host:dir
