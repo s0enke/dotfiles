@@ -1,0 +1,34 @@
+[user]
+	name = Soenke Ruempler
+	email = soenke@ruempler.eu
+
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[branch]
+    autosetupmerge = true
+[core]
+    warnAmbiguousRefs = false
+[diff]
+    renames = true
+[push]
+    default = tracking
+[alias]
+    changes=diff --name-status -r
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    tschuesch = blame
+[receive]
+    denyNonFastForwards = true
+
