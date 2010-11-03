@@ -12,14 +12,19 @@
     diff = auto
     status = auto
     branch = auto
+
 [branch]
     autosetupmerge = true
+
 [core]
     warnAmbiguousRefs = false
+
 [diff]
     renames = true
+
 [push]
     default = tracking
+
 [alias]
     changes=diff --name-status -r
     st = status
@@ -29,6 +34,10 @@
     df = diff
     lg = log -p
     tschuesch = blame
+    elog = log  --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
 [receive]
     denyNonFastForwards = true
 
+[rerere]
+    enabled = 1
