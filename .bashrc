@@ -113,3 +113,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias famok='strace -p $(pgrep firefox-bin) -e fsync,fdatasync -tT'
 
+export JIMDO_TEST_HOST=ruemplergit.test
+
+# gems to path
+PATH=$PATH:/var/lib/gems/1.8/bin
