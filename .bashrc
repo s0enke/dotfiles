@@ -117,3 +117,4 @@ export JIMDO_TEST_HOST=ruemplergit.test
 
 # gems to path
 PATH=$PATH:/var/lib/gems/1.8/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
