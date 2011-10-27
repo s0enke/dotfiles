@@ -3,6 +3,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+colorscheme molokai
+set t_Co=256
 
 filetype plugin indent on
 augroup vimrc
