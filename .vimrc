@@ -28,3 +28,6 @@ autocmd BufNewFile,BufRead Vagrantfile setf ruby
 augroup END
 au FileType cucumber set ts=2 sw=2 expandtab list
 
+highlight ExtraWhitespace ctermbg=darkred
+match ExtraWhitespace /\s\+$/
+
