@@ -111,8 +111,8 @@ fi
 alias l='ls -al'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias famok='strace -p $(pgrep firefox-bin) -e fsync,fdatasync -tT'
-
+alias t="ssh testserver"
+alias cw="ssh -t testserver 'bash -i -c \"cd codewatch; ./codewatch.rb\"'"
 export JIMDO_TEST_HOST=ruemplergit.test
 export XDEBUG_CONFIG="idekey=$USER remote_host=$(echo $SSH_CONNECTION | cut -d' ' -f1) remote_enable=1 remote_port=9000"
 
