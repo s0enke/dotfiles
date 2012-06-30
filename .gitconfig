@@ -7,6 +7,7 @@
     filemode = true
     bare = false
     logallrefupdates = true
+    warnAmbiguousRefs = false
 
 [color]
     diff = auto
@@ -14,10 +15,7 @@
     branch = auto
 
 [branch]
-    autosetupmerge = true
-
-[core]
-    warnAmbiguousRefs = false
+    autosetuprebase = always
 
 [diff]
     renames = true
@@ -33,7 +31,7 @@
     co = checkout
     df = diff
     lg = log -p
-    tschuesch = blame
+    cues = blame
     elog = log  --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 [receive]
