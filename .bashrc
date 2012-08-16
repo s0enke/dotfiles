@@ -121,3 +121,6 @@ PATH=$PATH:/var/lib/gems/1.8/bin
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# ec2
+. ec2switch jimdo
