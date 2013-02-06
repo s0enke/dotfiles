@@ -124,3 +124,5 @@ PATH=$PATH:/var/lib/gems/1.8/bin
 
 # ec2
 . ec2switch jimdo
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
