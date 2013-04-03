@@ -33,7 +33,7 @@
     lg = log -p
     cues = blame
     elog = log  --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    starecopu = "!sh -c 'git stash && git pull --rebase && git stash pop && git commit -am \"$0\" && git push'"
+    starecopu = "!sh -c 'git stash && git pull --rebase --recurse-submodules && git submodule update && git stash pop && git commit -am \"$0\" && git push'"
 
 [receive]
     denyNonFastForwards = true
