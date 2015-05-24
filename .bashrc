@@ -65,6 +65,9 @@ __git_uncommitted_changes() {
 
 PS1='${debian_chroot:+($debian_chroot)}\u\[$(__git_uncommitted_changes)\]♥\[\e[0m\]\h${STAGING_SYSTEM:+[$STAGING_SYSTEM]}:\w$(__git_ps1 " (%s)")\$ '
 
+__no_git_magic_ps1() {
+  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+}
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -111,18 +114,28 @@ fi
 alias l='ls -al'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias t="ssh testserver"
-alias cw="ssh -t testserver 'bash -i -c \"cd codewatch; ./codewatch.rb\"'"
-export JIMDO_TEST_HOST=ruemplergit.test
-export XDEBUG_CONFIG="idekey=$USER remote_host=$(echo $SSH_CONNECTION | cut -d' ' -f1) remote_enable=1 remote_port=9000"
+alias git=hub
 
-# gems to path
-PATH=$PATH:/var/lib/gems/1.8/bin
+export GITHUB_USER=s0enke
 
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# go
+export GOPATH=$HOME/projects/go
+PATH=$PATH:~/projects/go/bin
 
-# ec2
-. ec2switch jimdo
+# AWS
+function set_aws {
+    eval $(awsenv shell $1)
+}
+function login_aws {
+    x-www-browser $(awsenv console $1)
+}
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$HOME/.rbenv/bin:$PATH # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
+
+# added by travis gem
+source /home/soenke/.travis/travis.sh
+
+# docker shortcuts
+alias jessie='docker run -i -t debian:jessie /bin/bash'
+
