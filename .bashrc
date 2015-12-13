@@ -133,9 +133,6 @@ function login_aws {
 PATH=$HOME/.rbenv/bin:$PATH # Add RVM to PATH for scripting
 eval "$(rbenv init -)"
 
-# added by travis gem
-source /home/soenke/.travis/travis.sh
-
 # docker shortcuts
 alias jessie='docker run -i -t debian:jessie /bin/bash'
 
