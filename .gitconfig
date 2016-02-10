@@ -8,6 +8,7 @@
     bare = false
     logallrefupdates = true
     warnAmbiguousRefs = false
+    excludesfile = ~/.global_gitignore
 
 [color]
     diff = auto
