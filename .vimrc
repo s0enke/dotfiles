@@ -94,7 +94,12 @@ set nojoinspaces
 set nowrap
 " auto-reload files on changes
 set autoread
-
+" never use tabs
+set expandtab
+" use 4 spaces
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLORS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
