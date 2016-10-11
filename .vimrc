@@ -231,7 +231,7 @@ nmap <leader>b :CommandTBuffer<cr>
 
 let g:CommandTMaxHeight = 20
 let g:CommandTAlwaysShowDotFiles = 1
-let g:CommandTWildIgnore = &wildignore . ",vendor/**"
+let g:CommandTWildIgnore = &wildignore . ",vendor/**,**/node_modules/**"
 let g:CommandTTraverseSCM = "pwd"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
