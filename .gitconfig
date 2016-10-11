@@ -23,7 +23,8 @@
 
 [push]
     default = tracking
-
+[pull]
+    rebase = true
 [alias]
     changes=diff --name-status -r
     st = status
