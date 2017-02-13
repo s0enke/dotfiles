@@ -127,7 +127,7 @@ function set_aws {
     eval $(awsenv shell $1)
 }
 function login_aws {
-    x-www-browser $(awsenv console $1)
+    x-www-browser $(awsenv console -d 600 $1)
 }
 
 PATH=$HOME/.rbenv/bin:$PATH # Add RVM to PATH for scripting
