@@ -25,6 +25,8 @@
     default = tracking
 [pull]
     rebase = true
+[rebase]
+	autoStash = true
 [alias]
     changes=diff --name-status -r
     st = status
