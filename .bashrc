@@ -136,3 +136,5 @@ eval "$(rbenv init -)"
 # docker shortcuts
 alias jessie='docker run -i -t debian:jessie /bin/bash'
 
+# cmdline completition
+complete -C '/usr/local/bin/aws_completer' aws
