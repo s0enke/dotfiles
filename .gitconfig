@@ -1,6 +1,6 @@
 [user]
-	name = Soenke Ruempler
-	email = soenke@ruempler.eu
+    name = Soenke Ruempler
+    email = soenke@ruempler.eu
 
 [core]
     repositoryformatversion = 0
@@ -22,11 +22,11 @@
     renames = true
 
 [push]
-	default = current
+    default = current
 [pull]
     rebase = true
 [rebase]
-	autoStash = true
+    autoStash = true
 [alias]
     changes=diff --name-status -r
     st = status
