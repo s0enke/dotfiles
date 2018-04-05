@@ -114,7 +114,6 @@ fi
 alias l='ls -al'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias git=hub
 
 export GITHUB_USER=s0enke
 
