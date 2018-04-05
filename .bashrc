@@ -120,6 +120,7 @@ export GITHUB_USER=s0enke
 # go
 export GOPATH=$HOME/projects/go
 PATH=$PATH:~/projects/go/bin
+PATH=$PATH:/usr/local/go/bin
 
 # AWS
 function set_aws {
