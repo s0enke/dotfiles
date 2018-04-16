@@ -15,9 +15,6 @@
     status = auto
     branch = auto
 
-[branch]
-    autosetuprebase = always
-
 [diff]
     renames = true
 
