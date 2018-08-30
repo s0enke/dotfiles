@@ -122,17 +122,6 @@ export GOPATH=$HOME/projects/go
 PATH=$PATH:~/projects/go/bin
 PATH=$PATH:/usr/local/go/bin
 
-# AWS
-function set_aws {
-    eval $(awsenv shell $1)
-}
-function login_aws {
-    x-www-browser $(awsenv console -d 600 $1)
-}
-
-PATH=$HOME/.rbenv/bin:$PATH # Add RVM to PATH for scripting
-eval "$(rbenv init -)"
-
 # docker shortcuts
 alias jessie='docker run -i -t debian:jessie /bin/bash'
 
