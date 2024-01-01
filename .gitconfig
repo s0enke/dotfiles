@@ -17,6 +17,8 @@
 
 [diff]
     renames = true
+	colorMoved = dimmed-zebra
+	color-moved-ws = ignore-all-space
 
 [push]
     default = current
